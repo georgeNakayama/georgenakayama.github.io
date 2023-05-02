@@ -3,7 +3,6 @@ title: "Semantic-Aware Transformation-Invariant RoI Align"
 collection: publications
 permalink: /publication/aroi
 excerpt: 'Great progress has been made in learning-based object detection methods in the last decade. Two-stage detectors often have higher detection accuracy than one-stage detectors, due to the use of region of interest (RoI) feature extractors which extract transformation-invariant RoI features for different RoI proposals, making refinement of bounding boxes and prediction of object categories more robust and accurate. However, previous RoI feature extractors can only extract invariant features under limited transformations. In this paper, we propose a novel RoI feature extractor, termed Semantic RoI Align (SRA), which is capable of extracting invariant RoI features under a variety of transformations for two-stage detectors. To this end, we design SRA with a semantic attention structure, a Dynamic Feature Sampler to dynamically sample features according to the RoI aspect ratio, and a new position embedding, i.e., Area Embedding, to provide more accurate position information. Experiments show that our model significantly outperforms baseline models with slight computational overhead. In addition, it shows excellent generalization ability and can be used to improve performance with various state-of-the-art backbones and detection methods.'
-date: 2023
 venue: 'In Submission'
 paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 ---
