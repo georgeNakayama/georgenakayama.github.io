@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "George Nakayama"
-  avatar           : "profile.png"
+  avatar           : "images/avatar.jpg"
   bio              : "Undergraduate Student"
   location         : "Stanford University"
   employer         :
