@@ -11,21 +11,39 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mathematics, Stanford University, 2019 - 2024 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Fall 2022 - present: Undergraduate Researcher
+  * Stanford University, California, USA
+  * Controllable Part-Based 3D Point Cloud Generation with Cross Diffusion
+  * Mensors: Mikaela Angelina Uy, Jiahui Huang, Shi-Min Hu, Ke Li, and Leonidas Guibas
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Winter 2022 - present: Research Assistant
+  * Tsinghua University, Beingjing, China
+  * Semantic-Aware Transformation-Invariant RoI Align
+  * Mentors: Guo-ye Yang and Shi-Min Hu 
+
+* Fall 2021 - Winter 2022: Visiting Student
+  * Yau Mathematical Science Center
+  * Classical Theories of nonlinear dispersive equations
+  * Mentors: Pin Yu
+
+* Fall 2021 - Winter 2022: Visiting Student
+  * Yau Mathematical Science Center
+  * Nonlinear dispersive equations
+  * Mentors: Pin Yu
+
+* summer 2021: Student Researcher
+  * Research in Industrial Projects for Students (RIPS) 2021
+  * Predicting start-up behavior of heat pipes and vapor chambers from frozen states
+
+* summer 2020: Student Researcher
+  * Summer Undergraduate Research in Mathematics (SURIM) 2020
+  * Solutions to the Allen-Cahn Equation
+  * Mentor: Jared Marx-Kuo 
+
   
 Skills
 ======
@@ -56,4 +74,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Junior Counselor at Ross Methematics Program during Summer 2020. 
