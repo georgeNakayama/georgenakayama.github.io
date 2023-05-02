@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About me"
+title: "I am Kiyohiro (George) Nakayama"
+excerpt: "I am Kiyohiro (George) Nakayama"
 author_profile: true
 redirect_from: 
   - /about/
