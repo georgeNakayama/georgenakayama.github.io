@@ -109,35 +109,95 @@ Third Year Undergraduate at Stanford University<br/>
 
 <!-- (<sup>*</sup>: indicates equal contribution.) -->
 
-<h4 style="font-size: 20px;">2023</h4>
 <table width="100%">
 
-<!--  DiffFacto -->
+<!--  Unified RoIAlign -->
 <tr>
-<td width="30%" valign="top"><p><img src="papers/difffacto.png" width="300" alt="" style="border-style: none" align="top"></p></td>
+    <td width="30%" valign="top"><p><img src="papers/unifiedRoIAlign.png" width="300" alt="" style="border-style: none" align="top"></p></td>
+    <td width="70%" valign="top"><p>
+        <h3>
+            Semantic-Aware Transformation-Invariant RoI Align
+        </h3>
+        <a href="https://scholar.google.com/citations?user=eiQ8AdkAAAAJ&hl=en" target="_blank">Guo-Ye Yang</a>,
+        <strong>George Kiyohiro Nakayama</strong>,
+        Zi-Kai Xiao,
+        Tai-Jiang Mu, 
+        Sharon Xiaolei Huang,
+        <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm" target="_blank">Shi-Min Hu</a><br>
+        AAAI Conference on Artificial Intelligence, 2024
+        <p>
+            Great progress has been made in learning-based object detection methods in the last decade. Two-stage detectors often have higher detection accuracy than one-stage detectors,
+            due to the use of region of interest (RoI) feature extractors
+            which extract transformation-invariant RoI features for different RoI proposals, making refinement of bounding boxes
+            and prediction of object categories more robust and accurate.
+            However, previous RoI feature extractors can only extract invariant features under limited transformations. In this paper,
+            we propose a novel RoI feature extractor, termed Semantic
+            RoI Align (SRA), which is capable of extracting invariant RoI
+            features under a variety of transformations for two-stage detectors. Specifically, we propose a semantic attention module
+            to adaptively determine different sampling areas by leveraging the global and local semantic relationship within the RoI.
+            We also propose a Dynamic Feature Sampler which dynamically samples features based on the RoI aspect ratio to enhance the efficiency of SRA, and a new position embedding,
+            i.e., Area Embedding, to provide more accurate position information for SRA through an improved sampling area representation. Experiments show that our model significantly
+            outperforms baseline models with slight computational overhead. In addition, it shows excellent generalization ability and
+            can be used to improve performance with various state-ofthe-art backbones and detection methods.
+        </p>
+        <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
+    </p></td>
+</tr>
+<!--  PL-NeRF -->
+<tr>
+<td width="30%" valign="top"><p><img src="papers/density.png" width="300" alt="" style="border-style: none" align="top"></p></td>
 <td width="70%" valign="top"><p>
     <h3>
-        DiffFacto: Controllable Part-Based 3D Point Cloud Generation with Cross Diffusion
+        NeRF Revisited: Fixing Quadrature Instability in Volume Rendering
     </h3>
-    <strong>Kiyohiro Nakayama</strong>,
     <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a>,
-    <a href="https://cg.cs.tsinghua.edu.cn/people/~huangjh/" target="_blank">Jiahui Huang</a>,
-    <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm" target="_blank">Shi-Min Hu</a>
-    <a href="http://www.sfu.ca/~keli/" target="_blank">Ke Li</a>
-    <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a><br>
-    IEEE International Conference on Computer Vision (ICCV), 2023
+    <strong>George Kiyohiro Nakayama</strong>,
+    <a href="https://www.guandaoyang.com/" target="_blank">Guangdao Yang</a>,
+    Rahul Krishna, 
+    <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a>,
+    <a href="http://www.sfu.ca/~keli/" target="_blank">Ke Li</a><br>
+    Advances in Neural Information Processing Systems (NeurIPS), 2023
     <p>
-        We introduce DiffFacto, a novel probabilistic generative model that learns the distribution of shapes with part-level control. 
-        We propose a factorization that models independent part style and part configuration distributions, 
-        and present a novel cross diffusion network that enables us to generate coherent and plausible shapes under our proposed factorization. 
-        Experiments show that our method is able to generate novel shapes with multiple axes of control. 
-        It achieves state-of-the-art part-level generation quality and generates plausible and coherent shape, 
-        while enabling various downstream editing applications such as shape interpolation, mixing and transformation editing.
+        Neural radiance fields (NeRF) rely on volume rendering to synthesize novel views. Volume rendering requires evaluating an integral along each ray, which is numerically approximated with a finite sum that corresponds to the exact integral along the ray under piecewise constant volume density. As a consequence, the rendered
+        result is unstable w.r.t. the choice of samples along the ray, a phenomenon that
+        we dub quadrature instability. We propose a mathematically principled solution
+        by reformulating the sample-based rendering equation so that it corresponds to
+        the exact integral under piecewise linear volume density. This simultaneously
+        resolves multiple issues: conflicts between samples along different rays, imprecise
+        hierarchical sampling, and non-differentiability of quantiles of ray termination
+        distances w.r.t. model parameters. We demonstrate several benefits over the classical sample-based rendering equation, such as sharper textures, better geometric
+        reconstruction, and stronger depth supervision. Our proposed formulation can be
+        also be used as a drop-in replacement to the volume rendering equation for existing methods like NeRFs
     </p>
     <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
 </p></td>
 </tr>
 
+<!--  DiffFacto -->
+<tr>
+    <td width="30%" valign="top"><p><img src="papers/difffacto.png" width="300" alt="" style="border-style: none" align="top"></p></td>
+    <td width="70%" valign="top"><p>
+        <h3>
+            DiffFacto: Controllable Part-Based 3D Point Cloud Generation with Cross Diffusion
+        </h3>
+        <strong>George Kiyohiro Nakayama</strong>,
+        <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a>,
+        <a href="https://cg.cs.tsinghua.edu.cn/people/~huangjh/" target="_blank">Jiahui Huang</a>,
+        <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm" target="_blank">Shi-Min Hu</a>
+        <a href="http://www.sfu.ca/~keli/" target="_blank">Ke Li</a>
+        <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a><br>
+        IEEE International Conference on Computer Vision (ICCV), 2023
+        <p>
+            We introduce DiffFacto, a novel probabilistic generative model that learns the distribution of shapes with part-level control. 
+            We propose a factorization that models independent part style and part configuration distributions, 
+            and present a novel cross diffusion network that enables us to generate coherent and plausible shapes under our proposed factorization. 
+            Experiments show that our method is able to generate novel shapes with multiple axes of control. 
+            It achieves state-of-the-art part-level generation quality and generates plausible and coherent shape, 
+            while enabling various downstream editing applications such as shape interpolation, mixing and transformation editing.
+        </p>
+        <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
+    </p></td>
+    </tr>
 <tr><td><br/></td></tr>
 </table>
 </ul>
