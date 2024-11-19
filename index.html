@@ -12,13 +12,13 @@
 <td>
 <div style="font-size:24; font-weight:bold">Kiyohiro (George) Nakayama 中山聖博</div>
 <div>
-Third Year Undergraduate at Stanford University<br/>
+Master's Student at Stanford University<br/>
 </div>
 <div>
     <b>Email:</b> <tt>w4756677 [at] stanford [dot] com</tt><br>
 </div>
 <div>
-<a href="resources/Resume.pdf" target='_blank'>[CV (April, 2023)]</a>&nbsp;
+<a href="resources/Resume.pdf" target='_blank'>[CV (November, 2024)]</a>&nbsp;
 <a href="#project">[Projects]</a>&nbsp;
 <a href="#education">[Education]</a>&nbsp;
 <a href="#experiences">[Experiences]</a>&nbsp;
@@ -46,18 +46,19 @@ Third Year Undergraduate at Stanford University<br/>
 <div class="section">
 <ul>
     <p>
-        I am a third year undergraduate student at Stanford University majoring in mathematics.I am generally interested in computer vision, graphics and machine learning. My recent research focuses on the representation and generation of objects/scenes for 2D and 3D content creation. Specifically, I have worked on controllable shape generation and 2D image segmentation.
+        I am a Coterm Master's student at Stanford University majoring in mathematics and computer science.I am generally interested in computer vision, graphics and machine learning. My recent research focuses on the representation and generation of objects/scenes for 2D and 3D content creation. 
     </p>
 
     <p>
-    I am fortunate to work in 
-    <a href="https://geometry.stanford.edu/" target="_blank">The Stanford Geometric Computation Group</a> under 
-    <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Prof. Leonidas J. Guibas</a>.
+    I am fortunate to work under the supervision of 
+    <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Prof. Leonidas J. Guibas</a>, 
+    <a href="https://stanford.edu/~gordonwz/" target="_blank">Prof. Gordon Wetzstein</a>, and 
+    <a href="https://graphics.stanford.edu/~djames/" target="_blank">Prof. Doug L. James</a>.
 
-    In the lab I am mentored by 
-    <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a>, whose help and support I cannot appreciate enough. 
+    I am mentored by 
+    <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a> and <a href="https://qq456cvb.github.io/" target="_blank">Yang You</a>, and <a href="https://www.guandaoyang.com/" target="_blank">Guandao Yang</a>  whose help and support I cannot appreciate enough. 
 
-    I also worked as a visiting student at 
+    I was also a visiting student at 
 <a href="https://www.tsinghua.edu.cn/en/" target='_blank'>Tsinghua University</a>
     under the supervision of 
     <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm" target='_blank'>Prof. Shi-Min Hu</a>.
@@ -110,6 +111,30 @@ Third Year Undergraduate at Stanford University<br/>
 <!-- (<sup>*</sup>: indicates equal contribution.) -->
 
 <table width="100%">
+<!--  ProvNeRF -->
+<tr>
+    <td width="30%" valign="top"><p><img src="papers/provNeRF.png" width="300" alt="" style="border-style: none" align="top"></p></td>
+    <td width="70%" valign="top"><p>
+        <h3>
+            ProvNeRF: Modeling per Point Provenance in NeRFs as a Stochastic Process
+        </h3>
+        <strong>Kiyohiro Nakayama</strong>,
+        <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a>,
+        <a href="https://qq456cvb.github.io/" target="_blank">Yang You</a>,
+        <a href="http://www.sfu.ca/~keli/" target="_blank">Ke Li</a><br>
+        <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a>,
+        Advances in Neural Information Processing Systems (NeurIPS), 2024
+        <p>
+            Neural radiance fields (NeRFs) have gained popularity with multiple works showing promising results across various applications.
+            However, to the best of our knowledge, existing works do not explicitly model the distribution of training camera poses, or consequently the triangulation quality,
+            a key factor affecting reconstruction quality dating back to classical vision literature. 
+            We close this gap with ProvNeRF, an approach that models the provenance for each point -- i.e., the locations where it is likely visible -- of NeRFs as a stochastic field. 
+            We achieve this by extending implicit maximum likelihood estimation (IMLE) to functional space with an optimizable objective. 
+            We show that modeling per-point provenance during the NeRF optimization enriches the model with information on triangulation leading to improvements in novel view synthesis and uncertainty estimation under the challenging sparse, 
+            unconstrained view setting against competitive baselines.
+        </p>
+        <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
+    </p></td>
 
 <!--  Unified RoIAlign -->
 <tr>
@@ -119,7 +144,7 @@ Third Year Undergraduate at Stanford University<br/>
             Semantic-Aware Transformation-Invariant RoI Align
         </h3>
         <a href="https://scholar.google.com/citations?user=eiQ8AdkAAAAJ&hl=en" target="_blank">Guo-Ye Yang</a>,
-        <strong>George Kiyohiro Nakayama</strong>,
+        <strong>Kiyohiro Nakayama</strong>,
         Zi-Kai Xiao,
         Tai-Jiang Mu, 
         Sharon Xiaolei Huang,
@@ -151,7 +176,7 @@ Third Year Undergraduate at Stanford University<br/>
         NeRF Revisited: Fixing Quadrature Instability in Volume Rendering
     </h3>
     <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a>,
-    <strong>George Kiyohiro Nakayama</strong>,
+    <strong>Kiyohiro Nakayama</strong>,
     <a href="https://www.guandaoyang.com/" target="_blank">Guangdao Yang</a>,
     Rahul Krishna, 
     <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas J. Guibas</a>,
@@ -180,7 +205,7 @@ Third Year Undergraduate at Stanford University<br/>
         <h3>
             DiffFacto: Controllable Part-Based 3D Point Cloud Generation with Cross Diffusion
         </h3>
-        <strong>George Kiyohiro Nakayama</strong>,
+        <strong>Kiyohiro Nakayama</strong>,
         <a href="https://mikacuy.github.io/" target="_blank">Mikaela Angelina Uy</a>,
         <a href="https://cg.cs.tsinghua.edu.cn/people/~huangjh/" target="_blank">Jiahui Huang</a>,
         <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm" target="_blank">Shi-Min Hu</a>
