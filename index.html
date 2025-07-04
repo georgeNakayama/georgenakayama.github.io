@@ -111,7 +111,76 @@ Master's Student at Stanford University<br/>
 (<sup>*</sup>: indicates equal contribution.)
 
 <table width="100%">
-<!--  ProvNeRF -->
+<!--  RBench -->
+<tr>
+    <td width="30%" valign="top"><p><img src="papers/Rbench.png" width="300" alt="" style="border-style: none" align="top"></p></td>
+    <td width="70%" valign="top"><p>
+        <h3>
+            RBench: Graduate-level Multi-disciplinary Benchmarks for LLM & MLLM Complex Reasoning Evaluation        </h3>
+        <a href="https://menghaoguo.github.io/index.html"  target="_blank">Meng-Hao Guo</a>,
+        <a href="https://georginhsu.github.io/"  target="_blank">Jiajun Xu</a>,
+        Yi Zhang,
+        Jiaxi Song,
+        Haoyang Peng,
+        Yi-Xuan Deng,
+        Xinzhi Dong,
+      <strong>Kiyohiro Nakayama</strong>,
+      <a href="https://gsunshine.github.io/"  target="_blank">Zhengyang Geng</a>,
+      <a href="https://cwchenwang.github.io/"  target="_blank">Chen Wang</a>,
+      Bolin Ni,
+      Guo-Wei Yang,
+      Yongming Rao,
+      Houwen Peng,
+      Han Hu,
+      <a href="https://stanford.edu/~gordonwz/"  target="_blank">Gordon Wetzstein</a>,
+      <a href="https://cg.cs.tsinghua.edu.cn/shimin.htm"  target="_blank">Shi-Min Hu</a><br>
+      ICML 2025
+        <p>
+            Reasoning stands as a cornerstone of intelligence, enabling the synthesis of existing knowledge to
+            solve complex problems. Despite remarkable progress, existing reasoning benchmarks often fail
+            to rigorously evaluate the nuanced reasoning capabilities required for complex, real-world problemsolving, particularly in multi-disciplinary and
+            multimodal contexts. In this paper, we introduce a graduate-level, multi-disciplinary, EnglishChinese benchmark, dubbed as Reasoning Bench
+            (R-Bench), for assessing the reasoning capability of both language and multimodal models. RBench spans 1,094 questions across 108 subjects
+            for language model evaluation and 665 questions across 83 subjects for multimodal model testing in both English and Chinese. These questions are meticulously curated to ensure rigorous
+            difficulty calibration, subject balance, and crosslinguistic alignment, enabling the assessment to
+            be an Olympiad-level multi-disciplinary benchmark. We evaluate widely used models, including OpenAI o1, GPT-4o, DeepSeek-R1, etc. Experimental results indicate that advanced models
+            perform poorly on complex reasoning, especially multimodal reasoning. Even the top-performing
+            model OpenAI o1 achieves only 53.2% accuracy on our multimodal evaluation. Data and code are
+            made publicly available at here.
+        </p>
+        <a href="https://evalmodels.github.io/rbench/" target="_blank">[Project]</a> <a href="https://arxiv.org/abs/2505.02018" target="_blank">[Paper]</a>  <a href="https://huggingface.co/datasets/R-Bench/R-Bench" target="_blank">[Dataset]</a>
+        <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
+    </p></td>
+<!-- GenAnalysis-->>
+<tr>
+    <td width="30%" valign="top"><p><img src="papers/GenAnalysis.png" width="300" alt="" style="border-style: none" align="top"></p></td>
+    <td width="70%" valign="top"><p>
+        <h3>
+            GenAnalysis: Joint Shape Analysis by Learning Man-Made Shape Generators with Deformation Regularizations.
+        </h3>
+        <a href="https://yyuezhi.github.io/"  target="_blank">Yuezhi Yang</a>,
+        <a href="https://yanghtr.github.io/"  target="_blank">Haitao Yang</a>,
+      <strong>Kiyohiro Nakayama</strong>,
+      <a href="https://en.westlake.edu.cn/faculty/xiangru-huang.html/"  target="_blank">Xiangru Huang</a>,
+      <a href="https://profiles.stanford.edu/leonidas-guibas"  target="_blank">Leonidas J. Guibas</a>,
+      <a href="https://www.cs.utexas.edu/~huangqx/"  target="_blank">Qixing Huang</a><br>
+      SIGGRAPH (Journal) 2025
+        <p>
+            We introduce GenAnalysis, an implicit shape generation framework that allows joint analysis of a collection of man-made shapes. 
+            GenAnalysis innovates in learning an implicit shape generator to reconstruct a continuous shape space from the input shape collection. 
+            It offers interpolations between pairs of input shapes for correspondence computation. 
+            It also allows us to understand the shape variations of each shape in the context of neighboring shapes. 
+            Such variations provide segmentation cues. 
+            A key idea of GenAnalysis is to enforce an as-affine-as-possible (AAAP) deformation regularization loss among adjacent synthetic shapes of the generator. 
+            This loss forces the generator to learn the underlying piece-wise affine part structures. 
+            We show how to extract data-driven segmentation cues by recovering piece-wise affine vector fields in the tangent space of each shape and how to use this generator to compute consistent inter-shape correspondences. 
+            These correspondences are then used to aggregate single-shape segmentation cues into consistent segmentations. Experimental results on benchmark datasets show that GenAnalysis achieves state-of-the-art results on shape segmentation and shape matching.
+        </p>
+        <a href="https://arxiv.org/abs/2503.00807" target="_blank">[Paper]</a>
+        <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
+    </p></td>
+
+<!--  AIpparel -->
 <tr>
     <td width="30%" valign="top"><p><img src="papers/aipparel.png" width="300" alt="" style="border-style: none" align="top"></p></td>
     <td width="70%" valign="top"><p>
@@ -140,7 +209,7 @@ Master's Student at Stanford University<br/>
             including text-to-garment and image-to-garment prediction, and it enables novel multimodal garment generation applications 
             such as interactive garment editing.
         </p>
-        <a href="https://georgenakayama.github.io/AIpparel/" target="_blank">[Project]</a> <a href="https://arxiv.org/abs/2412.03937" target="_blank">[Paper]</a> <a href="" target="_blank">[Code]</a>
+        <a href="https://georgenakayama.github.io/AIpparel/" target="_blank">[Project]</a> <a href="https://arxiv.org/abs/2412.03937" target="_blank">[Paper]</a> <a href="https://github.com/georgeNakayama/AIpparel-Code" target="_blank">[Code]</a>
         <!-- <a href="bibtex/GeoConcept.txt" target="_blank">[BibTex]</a> -->
     </p></td>
 
