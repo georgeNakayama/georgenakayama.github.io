@@ -97,9 +97,39 @@ PhD Student at Stanford University<br/>
 <div class="mainsection">
 <ul>
 
-(<sup>*</sup>: indicates equal contribution.)
+(<sup>*</sup>: indicates equal contribution; <sup>&dagger;</sup>: indicates equal advising.)
 
 <table width="100%">
+<!--  LoT Diffusion -->
+<tr>
+    <td width="30%" valign="top"><p><video src="lotdiffusion/assets/teaser-v6.mp4" width="300" autoplay muted loop playsinline style="border-style: none"></video></p></td>
+    <td width="70%" valign="top"><p>
+        <h3>
+            Level-of-Token Diffusion
+        </h3>
+        <strong>Kiyohiro Nakayama</strong>,
+        <a href="https://bchao1.github.io/"  target="_blank">Brian Chao</a>,
+        <a href="https://janackermann.info/"  target="_blank">Jan Ackermann</a>,
+        <a href="https://hanshengchen.com/"  target="_blank">Hansheng Chen</a>,
+        <a href="https://federicotombari.github.io/"  target="_blank">Federico Tombari</a>,
+        <a href="https://profiles.stanford.edu/leonidas-guibas"  target="_blank">Leonidas J. Guibas</a>,
+        <a href="https://lioryariv.github.io/"  target="_blank">Lior Yariv</a><sup>&dagger;</sup>,
+        <a href="https://stanford.edu/~gordonwz/"  target="_blank">Gordon Wetzstein</a><sup>&dagger;</sup><br>
+        arXiv preprint, 2026
+        <p>
+            Image and video diffusion models allocate equal computation to every region, even when the intended scene calls for varying levels of detail.
+            The spatial distribution of detail can often be anticipated before generation, indicating where computation can be reduced.
+            We introduce <b>Level-of-Token (LoT) Diffusion</b>, a framework that turns this knowledge into an explicit multiresolution token layout (<em>Level-of-Token layout</em>) for adaptive and efficient generation.
+            Tokens represent rectangular patches of varying sizes and shapes, allocating finer tokens where detail is needed and coarser tokens elsewhere.
+            We adapt pretrained diffusion transformers to LoT layouts through a patch-wise asymmetric flow parametrization and embeddings for multiresolution tokens, preserving full-resolution flow prediction at every denoising step while processing only a reduced token sequence.
+            LoT Diffusion enables layout-adaptive generation while preserving pretrained generative priors.
+            We demonstrate LoT with layouts derived from semantic masks, bounding boxes, texture variance, and depth-of-field cues, as well as agentic plans.
+            Across image and video generation, LoT offers favorable quality&ndash;efficiency tradeoffs, with significant speedups determined by the layout&rsquo;s token budget.
+        </p>
+        <a href="https://georgenakayama.github.io/lotdiffusion/" target="_blank">[Project]</a> <a href="https://arxiv.org/abs/2610.05816" target="_blank">[Paper]</a> <a href="https://georgenakayama.github.io/lotdiffusion/supplementary/" target="_blank">[Supplementary]</a>
+    </p></td>
+</tr>
+
 <!--  Garment Particles -->
 <tr>
     <td width="30%" valign="top"><p><img src="papers/garment_particle_img.jpg" width="300" alt="" style="border-style: none" align="top"></p></td>
